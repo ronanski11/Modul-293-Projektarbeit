@@ -1,0 +1,160 @@
+:root {
+  /* CSS HEX */
+  --peach: #fcbe95ff;
+  --pumpkin: #ff7f2aff;
+  --black: #000000ff;
+  --prussian-blue: #152e4fff;
+  --oxford-blue: #00213aff;
+}
+
+body {
+  background-image: url(../img/backround-image.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Bahnschrift", sans-serif;
+}
+
+p {
+  text-align: center;
+  color: var(--pumpkin);
+  margin: 12%;
+  background: var(--black);
+  font-size: 1vw;
+}
+
+#content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex: 1;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 76%;
+  background: #000000; /* Set a background to make the header's content visible on top of other content */
+  z-index: 1000; /* Ensures the header is displayed on top of other content */
+  margin-left: 12%;
+  margin-right: 12%;
+}
+
+aside {
+  flex: 0 0 auto; /* Prevents aside from growing or shrinking */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns the items to the left */
+  position: fixed;
+}
+
+.fa-bars {
+  cursor: pointer; /* Changes the cursor to a hand when hovering over the bars icon */
+  color: var(--pumpkin);
+}
+
+#dropdown-parent {
+  position: fixed;
+  margin-right: 1%;
+  right: 0;
+}
+
+.dropdown-menu {
+  display: none; /* The dropdown is hidden by default */
+  flex-direction: column;
+  background-color: var(--pumpkin);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: var(--black);
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.dropdown-menu a:hover {
+  background-color: var(--peach);
+}
+
+h1 {
+  color: var(--pumpkin);
+  font-size: 4vw;
+}
+
+#logo-link {
+  position: fixed;
+  right: 0;
+  margin: 0.5%;
+}
+
+.logo {
+  position: fixed;
+  height: 10vw;
+  width: 10vw;
+  left: 0;
+  z-index: 2000;
+}
+
+#Welcome {
+  text-align: center;
+  color: var(--pumpkin);
+  margin: 12%;
+  font-size: 4vw;
+}
+.Page_options {
+  z-index: +1;
+  text-align: center;
+  appearance: none;
+  background-color: var(--pumpkin);
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #00000094;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.24px;
+  margin: 2%;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 14%;
+}
+.Page_options:hover {
+  background-color: rgb(56, 81, 114);
+  transform: scale(1.125);
+  color: rgba(202, 202, 202, 0.782);
+}
+
+.Page_options:visited {
+  background-color: rgb(56, 81, 114);
+  transform: scale(1.125);
+  color: rgba(202, 202, 202, 0.782);
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: var(--black);
+  text-decoration: none;
+}
+a:visited {
+  color: var(--black);
+  text-decoration: none;
+}
