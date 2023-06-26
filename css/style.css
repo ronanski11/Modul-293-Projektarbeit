@@ -118,7 +118,6 @@ h4 {
   background-color: var(--pumpkin);
   border-radius: 40em;
   border-style: none;
-  box-shadow: #00000094;
   box-sizing: border-box;
   color: #000000;
   cursor: pointer;
@@ -228,37 +227,290 @@ a:visited {
   margin: 0 15% 0 15%;
 }
 
-@media (max-width: 600px) {
-  h1,
-  #Welcome {
-    font-size: 8vw;
+.signup-form-container {
+  background-color: var(--prussian-blue);
+  border-radius: 2vw;
+  border: 1.5vw solid var(--oxford-blue);
+  padding: 1vw;
+  max-width: 35vw;
+  margin: 15% auto 0 auto;
+  animation: slide-up 0.5s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-form-container h2 {
+  text-align: center;
+  color: var(--peach);
+  font-size: 2vw;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form label {
+  margin-bottom: 10px;
+}
+
+.signup-form input,
+.signup-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.signup-form .submit-button {
+  background-color: var(--pumpkin);
+  color: var(--black);
+  padding: 0.7vw;
+  border-radius: 1vw;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form .submit-button:hover {
+  background-color: var(--peach);
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#form-items-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-items {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 2vw;
+}
+
+.submit-button {
+  margin: auto 5vw;
+}
+
+.span-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5vw;
+}
+
+.span-input-container span {
+  color: var(--pumpkin);
+  font-size: 1vw;
+}
+
+input,
+textarea {
+  height: 1vw;
+  width: 13vw;
+}
+
+.signup-form p {
+  font-size: 1vw;
+}
+
+#club-location {
+  padding: 2vw;
+  background-color: var(--prussian-blue);
+  border: 0.5vw solid var(--oxford-blue);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 5%;
+  border-radius: 2vw;
+  width: fit-content;
+}
+
+iframe {
+  border: 1vw solid var(--oxford-blue);
+  border-radius: 2vw;
+}
+
+#club-location-description {
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#club-location-description p {
+  color: var(--pumpkin);
+  font-size: 3vw;
+}
+
+#club-location-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.span-input-container-kontakt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5vw;
+}
+
+.span-input-container-kontakt span {
+  color: var(--pumpkin);
+  font-size: 1vw;
+}
+
+.span-input-container-kontakt textarea {
+  height: 5vw;
+  width: 13vw;
+}
+
+/*  __  __          _ _          ____                  _           
+ |  \/  |        | (_)        / __ \                (_)          
+ | \  / | ___  __| |_  __ _  | |  | |_   _  ___ _ __ _  ___  ___ 
+ | |\/| |/ _ \/ _` | |/ _` | | |  | | | | |/ _ \ '__| |/ _ \/ __|
+ | |  | |  __/ (_| | | (_| | | |__| | |_| |  __/ |  | |  __/\__ \
+ |_|  |_|\___|\__,_|_|\__,_|  \___\_\\__,_|\___|_|  |_|\___||___/
+                                                                 
+                                                                 */
+
+@media only screen and (max-width: 600px) {
+  #background-image {
+    width: 100%;
+    top: 10vw;
+    margin: 50vw 0;
   }
 
-  p {
-    font-size: 4vw;
+  header {
+    height: 20vw;
+  }
+
+  h1 {
+    font-size: 10vw;
+  }
+
+  #Welcome {
+    margin: 40vw 25vw 15vw 25vw;
+    font-size: 10vw;
   }
 
   .logo {
-    height: 20vw;
-    width: 20vw;
+    height: 15vw;
+    width: 15vw;
+    margin: 1vw 3vw;
+  }
+
+  #dropdown-parent {
+    margin: 3vw;
+  }
+
+  section {
+    flex-direction: column;
+    gap: 7vw;
   }
 
   .Page_options {
-    font-size: 3vw;
-    padding: 2vw 3vw;
+    padding: 5vw;
+  }
+
+  .Page_options p {
+    font-size: 10vw;
+  }
+
+  .dropdown-menu a {
+    font-size: 7vw;
+  }
+
+  iframe {
+    width: 60vw;
+    height: 40vw;
+  }
+
+  #club-location-description p {
+    font-size: 4vw;
   }
 
   #club-info-container {
     flex-direction: column;
-    margin: 10% 5%;
+    margin: 30vw auto 2vw auto;
   }
 
   .club-info {
-    font-size: 4vw;
+    font-size: 3vw;
   }
 
-  .club-info-boxes {
-    padding: 3%;
-    border-radius: 5vw;
+  #club-stats {
+    gap: 2vw;
+  }
+
+  .club-stats-div img {
+    height: 25vw;
+    width: 25vw;
+  }
+
+  .club-stats-div h4 {
+    font-size: 3.5vw;
+  }
+
+  .club-stats-div p {
+    font-size: 5vw;
+  }
+
+  .signup-form-container {
+    margin: 40vw 2vw;
+    max-width: none;
+  }
+
+  .form-items {
+    width: 100%;
+  }
+
+  .signup-form-container h2 {
+    font-size: 7vw;
+  }
+
+  .span-input-container span {
+    font-size: 5vw;
+  }
+
+  .span-input-container input {
+    width: 70%;
+  }
+
+  .span-input-container textarea {
+    width: 70%;
+  }
+
+  .span-input-container-kontakt span {
+    font-size: 5vw;
+  }
+
+  .span-input-container-kontakt textarea {
+    width: 70%;
+  }
+
+  .signup-form .submit-button {
+    padding: 2vw;
+    border-radius: 7vw;
+  }
+
+  .submit-button p {
+    font-size: 5vw;
   }
 }
