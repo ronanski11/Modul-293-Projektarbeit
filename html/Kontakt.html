@@ -1,76 +1,69 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>BC Allschwil | Mitglied werden</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="../img/logo.ico" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="../css/style.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css" />
-  </head>
-  <body>
-    <header>
-      <h1>BC Allschwil</h1>
-    </header>
-    <div id="content-container">
-      <aside>
-        <div id="dropdown-parent">
-          <i class="fa fa-bars fa-3x" id="dropdown-toggle"></i>
-          <div class="dropdown-menu" id="dropdown-menu">
-            <a href="../index.html">Homepage</a>
-            <a href="Klub.html">Klub</a>
-            <a href="Mitglied.html">Mitglied werden</a>
-            <a href="Kontakt.html">Kontakt</a>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BC Allschwil | Mitglied werden</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="../img/logo.ico">
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+  <header>
+    <h1>BC Allschwil</h1>
+  </header>
+  <div id="content-container">
+    <aside>
+      <div id="dropdown-parent">
+        <i class="fa fa-bars fa-3x" id="dropdown-toggle"></i>
+        <div class="dropdown-menu" id="dropdown-menu">
+          <a href="../index.html">Homepage</a>
+          <a href="Klub.html">Klub</a>
+          <a href="Mitglied.html">Mitglied werden</a>
+          <a href="Kontakt.html">Kontakt</a>
+        </div>
+      </div>
+    </aside>
+    <a href="../index.html" class="logo-link">
+      <img id="logo-2" class="logo" src="../img/logo.png" alt="Logo">
+    </a>
+    <img id="background-image" src="../img/background-image.jpg" alt="Background image">
+  </div>
+  <main>
+    <div class="signup-form-container">
+      <h2>Kontakt</h2>
+      <form class="signup-form" onsubmit="kontaktSubmit()">
+        <div id="form-items-container">
+          <div class="form-items">
+            <label class="span-input-container">
+              <span>Vorname:</span>
+              <input type="text" id="firstname" name="firstname" required>
+            </label>
+            <label class="span-input-container">
+              <span>Nachname:</span>
+              <input type="text" id="lastname" name="lastname" required>
+            </label>
+          </div>
+          <div class="form-items">
+            <label class="span-input-container"> </label>
+            <label class="span-input-container-kontakt">
+              <span>Nachricht:</span>
+              <textarea id="experience" name="experience" required></textarea>
+            </label>
           </div>
         </div>
-      </aside>
-      <a href="../index.html" class="logo-link">
-        <img id="logo-2" class="logo" src="../img/logo.png" alt="Logo" />
-      </a>
-      <img
-        id="background-image"
-        src="../img/360_F_141694662_GmNxTKSKTHOSynRFewpQqOhody5EhIRo.jpg"
-        alt=""
-      />
+        <button type="submit" class="submit-button">
+          <span>Senden</span>
+        </button>
+      </form>
     </div>
-    <main>
-      <div class="signup-form-container">
-        <h2>Kontakt</h2>
-        <form class="signup-form" onsubmit="kontaktSubmit()">
-          <div id="form-items-container">
-            <div class="form-items">
-              <label class="span-input-container">
-                <span>Vorname:</span>
-                <input type="text" id="firstname" name="firstname" required />
-              </label>
-              <label class="span-input-container">
-                <span>Nachname:</span>
-                <input type="text" id="lastname" name="lastname" required />
-              </label>
-            </div>
-            <div class="form-items">
-              <label class="span-input-container"> </label>
-              <label class="span-input-container-kontakt">
-                <span>Nachricht:</span>
-                <textarea id="experience" name="experience" required></textarea>
-              </label>
-            </div>
-          </div>
-          <button type="submit" class="submit-button"><p>Senden</p></button>
-        </form>
-      </div>
-    </main>
+  </main>
 
-    <script src="../js/main.js"></script>
-  </body>
+  <script src="../js/main.js"></script>
+</body>
+
 </html>

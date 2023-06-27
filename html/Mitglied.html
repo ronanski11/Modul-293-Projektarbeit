@@ -1,138 +1,99 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>BC Allschwil | Kontakt</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" href="../img/logo.ico" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="../css/style.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css" />
-  </head>
-  <body>
-    <header>
-      <h1>BC Allschwil</h1>
-    </header>
-    <div id="content-container">
-      <aside>
-        <div id="dropdown-parent">
-          <i class="fa fa-bars fa-3x" id="dropdown-toggle"></i>
-          <div class="dropdown-menu" id="dropdown-menu">
-            <a href="../index.html">Homepage</a>
-            <a href="Klub.html">Klub</a>
-            <a href="Mitglied.html">Mitglied werden</a>
-            <a href="Kontakt.html">Kontakt</a>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BC Allschwil | Kontakt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="../img/logo.ico">
+  <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.css">
+</head>
+
+<body>
+  <header>
+    <h1>BC Allschwil</h1>
+  </header>
+  <div id="content-container">
+    <aside>
+      <div id="dropdown-parent">
+        <i class="fa fa-bars fa-3x" id="dropdown-toggle"></i>
+        <div class="dropdown-menu" id="dropdown-menu">
+          <a href="../index.html">Homepage</a>
+          <a href="Klub.html">Klub</a>
+          <a href="Mitglied.html">Mitglied werden</a>
+          <a href="Kontakt.html">Kontakt</a>
+        </div>
+      </div>
+    </aside>
+    <a href="../index.html" class="logo-link">
+      <img id="logo-2" class="logo" src="../img/logo.png" alt="Logo">
+    </a>
+    <img id="background-image" src="../img/background-image.jpg" alt="Background image">
+  </div>
+  <main>
+    <div class="signup-form-container">
+      <h2>Werde ein Mitglied</h2>
+      <form class="signup-form" onsubmit="formSubmit()">
+        <div id="form-items-container">
+          <div class="form-items">
+            <label class="span-input-container">
+              <span>Geschlecht:</span>
+              <select name="sex" id="sex">
+                <option value="Männlich">Männlich</option>
+                <option value="Weiblich">Weiblich</option>
+              </select>
+            </label>
+            <label class="span-input-container">
+              <span>Vorname:</span>
+              <input type="text" id="firstname" name="firstname" required>
+            </label>
+            <label class="span-input-container">
+              <span>Nachname:</span>
+              <input type="text" id="lastname" name="lastname" required>
+            </label>
+            <label class="span-input-container">
+              <span>Alter :</span>
+              <input type="number" id="age" name="age" required>
+            </label>
+            <label class="span-input-container">
+              <span>Email:</span>
+              <input id="email" name="email" required>
+            </label>
+          </div>
+          <div class="form-items">
+            <label class="span-input-container">
+              <span>Strasse:</span>
+              <input type="text" id="address" name="address" required>
+            </label>
+            <label class="span-input-container">
+              <span>PLZ:</span>
+              <input type="number" id="plz" name="plz" min="1000" max="9999" required>
+            </label>
+            <label class="span-input-container">
+              <span>Land:</span>
+              <input type="text" id="country" name="country" required>
+            </label>
+            <label class="span-input-container">
+              <span>Telefonnummer :</span>
+              <input type="text" id="t-number" name="number" minlength="9" maxlength="15" required>
+            </label>
+            <label class="span-input-container">
+              <span>Erfahrung im Basketball:</span>
+              <textarea id="experience" name="experience" required></textarea>
+            </label>
           </div>
         </div>
-      </aside>
-      <a href="../index.html" class="logo-link">
-        <img id="logo-2" class="logo" src="../img/logo.png" alt="Logo" />
-      </a>
-      <img
-        id="background-image"
-        src="../img/360_F_141694662_GmNxTKSKTHOSynRFewpQqOhody5EhIRo.jpg"
-        alt=""
-      />
+        <button type="submit" class="submit-button">
+          <span>Probetraining anfragen</span>
+        </button>
+      </form>
     </div>
-    <main>
-      <div class="signup-form-container">
-        <h2>Werde ein Mitglied</h2>
-        <form class="signup-form" onsubmit="formSubmit()">
-          <div id="form-items-container">
-            <div class="form-items">
-              <label class="span-input-container">
-                <span>Geschlecht:</span>
-                <select name="sex" id="sex">
-                  <option value="Männlich">Männlich</option>
-                  <option value="Weiblich">Weiblich</option>
-                </select>
-              </label>
-              <label class="span-input-container">
-                <span>Vorname:</span>
-                <input type="text" id="firstname" name="firstname" required />
-              </label>
-              <label class="span-input-container">
-                <span>Nachname:</span>
-                <input type="text" id="lastname" name="lastname" required />
-              </label>
-              <label class="span-input-container">
-                <span>Alter :</span>
-                <input type="number" id="age" name="age" required/>
-              </label>
-              <label class="span-input-container">
-                <span>Email:</span>
-                <input
-                  id="email"
-                  name="email"
-                  required
-                ></input>
-              </label>
-            </div>
-            <div class="form-items">
-              <label class="span-input-container">
-                <span>Strasse:</span>
-                <input
-                  type="text"
-                  id="address"
-                  name="address"
-                  required
-                />
-              </label>
-              <label class="span-input-container">
-                <span>PLZ:</span>
-                <input
-                  type="plz"
-                  id="plz"
-                  name="plz"
-                  min="1000"
-                  max="9999"
-                  required
-                />
-              </label>
-              <label class="span-input-container">
-                <span>Land:</span>
-                <input
-                  type="text"
-                  id="country"
-                  name="country"
-                  required
-                />
-              </label>
-              <label class="span-input-container">
-                <span>Telefonnummer :</span>
-                <input
-                  type="text"
-                  id="t-number"
-                  name="number"
-                  minlength="11"
-                  max="15"
-                  required
-                />
-              </label>
-              <label class="span-input-container">
-                <span>Erfahrung im Basketball:</span>
-                <textarea
-                  id="experience"
-                  name="experience"
-                  required
-                ></textarea>
-              </label>
-            </div>
-          </div>
-          <button type="submit" class="submit-button"><p>Probetraining anfragen</p></button>
-        </form>
-      </div>
-    </main>
+  </main>
 
-    <script src="../js/main.js"></script>
-  </body>
+  <script src="../js/main.js"></script>
+</body>
+
 </html>

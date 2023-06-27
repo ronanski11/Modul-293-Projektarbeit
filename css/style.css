@@ -20,6 +20,10 @@ p {
   white-space: nowrap;
 }
 
+span {
+  font-family: "Bahnschrift", sans-serif;
+}
+
 #content-container {
   display: flex;
   flex-direction: column;
@@ -150,7 +154,7 @@ h4 {
   color: rgba(202, 202, 202, 0.782);
 }
 
-section {
+#page-links-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -324,7 +328,7 @@ textarea {
   width: 13vw;
 }
 
-.signup-form p {
+.submit-button span {
   font-size: 1vw;
 }
 
@@ -511,7 +515,7 @@ iframe {
     border-radius: 7vw;
   }
 
-  .submit-button p {
+  .submit-button span {
     font-size: 5vw;
   }
 }
