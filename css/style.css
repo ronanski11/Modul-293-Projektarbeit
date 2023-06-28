@@ -68,7 +68,7 @@ aside {
   background-color: var(--pumpkin);
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px var(--black);
 }
 
 .dropdown-menu a {
@@ -88,7 +88,7 @@ h1 {
 }
 
 h4 {
-  color: white;
+  color: var(--peach);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,7 +123,7 @@ h4 {
   border-radius: 40em;
   border-style: none;
   box-sizing: border-box;
-  color: #000000;
+  color: var(--black);
   cursor: pointer;
   display: inline-block;
   font-size: 1.2rem;
@@ -141,17 +141,33 @@ h4 {
   touch-action: manipulation;
   width: fit-content;
   padding: 1vw 1.5vw;
+  animation: fadeIn 1s;
+  transition: transform 0.3s ease;
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .Page_options:hover {
-  background-color: rgb(56, 81, 114);
+  background-color: var(--peach);
   transform: scale(1.125);
-  color: rgba(202, 202, 202, 0.782);
+}
+
+.Page_options:active {
+  background-color: var(--pumpkin);
+  transform: scale(1);
 }
 
 .Page_options:visited {
-  background-color: rgb(56, 81, 114);
+  background-color: var(--peach);
   transform: scale(1.125);
-  color: rgba(202, 202, 202, 0.782);
 }
 
 #page-links-container {
@@ -425,7 +441,7 @@ iframe {
     margin: 3vw;
   }
 
-  section {
+  #page-links-container {
     flex-direction: column;
     gap: 7vw;
   }
